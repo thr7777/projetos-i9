@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contatos{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    /*tira o pontinho da lista*/
+    list-style-type: none;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#informacoes{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+#info{
+    width: 800px
+}
+
+#imagem-perfil{
+    border-radius: 25%;
+}
+
+/*estilizacao do meio*/
+
+#meio{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa{
+    width: 500px;
+    padding-left: 10px;
+
+    /*estilizacao dos textos*/
+    border-radius: 25px;
+
+
+    border-bottom: 1px solid black;
+}
+
+#grid1{
+
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#final{
+    display: flex;
+    justify-content: center;
+}
+#encerramento{
+    width: 700px;
+    text-align: center;
+}
+
+
+/*estilizacoes para o js*/
+.contato{
+    /*o link é um elemento inline, logo precisa ser modificado pra conseguir usar a transition*/
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.ativo{
+    background-color: brown;
+}
+
+.mudar-tema{
+    background-color: black;
+    color: aliceblue;
+}
+
+.mudar-caixa{
+    background-color: rgba(54, 54, 54, 0.1);
+    border-bottom: 1px solid aliceblue;
+    
+}
+.mudar-cor-link{
+    color: aliceblue;
+}
