@@ -1,0 +1,107 @@
+/*configurações gerais*/
+body {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    /*nao encostar na borda da tela*/
+    margin: 0;
+    padding: 20px;
+    /*centraliza no centro*/
+    text-align: center;
+}
+
+
+img {
+    border-radius: 50px;
+
+    /*margem em cima e em baixo*/
+    margin: 15px 0;
+}
+
+/* paragrafos */
+p {
+    /*largura maxima*/
+    max-width: 700px;
+    /*margem dos paragrafos pra cima e pra baixo*/
+    margin: 10px auto;
+    /*espaçamento das linhas*/
+    line-height: 1.5;
+}
+
+/* informações e historia */
+.caixa1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info, .hist {
+    background-color: #1f1f1f;
+    /*espaço interno*/
+    padding: 20px;
+    /*largura maxima de 45% da caixa*/
+    width: 45%;
+    border-radius: 10px;
+}
+
+.setor, .funcao, .habilidades, .tec, .planos, .objetivos, .curiosidade, .contatos, .encerramento {
+    background-color: #1f1f1f;
+    /*margem pra cima e pra baixo e centralizacao das caixas*/
+    margin: 20px auto;
+    /*espaço interno*/
+    padding: 20px;
+    border-radius: 10px;
+    /*largura maxima*/
+    max-width: 900px;
+}
+
+ul {
+    /*para nao separar os*/
+    list-style-position: inside;
+}
+
+
+a {
+    color: #4da6ff;
+    /*tirar linhas*/
+    text-decoration: none;
+}
+
+/*efeito hover*/
+a:hover {
+    /*coloca linha*/
+    text-decoration: underline;
+}
+
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    /*espaçamento de dentro do botao*/
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/*efeito hover*/
+button:hover {
+    background-color: #0080ff;
+}
+
+
+/*criando borda interativa quando passa o mouse*/
+
+#foto-principal{
+    border: 1px solid transparent;
+    border-color: #0080ff;
+    transition: 0.3s;
+}
+
+.brilhando {
+    border-color: white;
+    box-shadow: 0 0 10px white,
+                0 0 20px blue,
+                0 0 40px black;
+}
